@@ -47,9 +47,9 @@ public class updatePatient extends HttpServlet {
             statusInsert = pat.updatePatient(n, dob, g, ad, id, us, em, pw, pn);
 
             if (statusInsert) {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/patient.jsp?status=successUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/patient.jsp?status=successUpdate");
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/patient.jsp?status=failedUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/patient.jsp?status=failedUpdate");
             }
         }
     }

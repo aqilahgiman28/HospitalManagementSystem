@@ -42,9 +42,9 @@ public class updateMedicine extends HttpServlet {
             statusInsert = updateM.updateMedicine(n, p, id);
 
             if (statusInsert) {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/medicine.jsp?status=successUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/medicine.jsp?status=successUpdate");
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/medicine.jsp?status=failedUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/medicine.jsp?status=failedUpdate");
             }
         }
     }

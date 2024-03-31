@@ -44,9 +44,9 @@ public class updateAdmin extends HttpServlet {
             statusInsert = ad.updateAdmin(n,id, us, em, pw, pn);
 
             if (statusInsert) {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/dashboard.jsp?status=successUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/dashboard.jsp?status=successUpdate");
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/dashboard.jsp?status=failedUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/dashboard.jsp?status=failedUpdate");
             }
         }
     }
