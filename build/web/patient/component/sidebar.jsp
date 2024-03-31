@@ -21,21 +21,29 @@
 
     <li class="nav-item active">
         <a class="nav-link" href="home.jsp">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <i class="fa-solid fa-house-user"></i>
             <span>Home</span></a>
     </li>
-    
+
     <li class="nav-item active">
         <a class="nav-link" href="slot.jsp">
             <i class="fa-solid fa-calendar-day"></i>
             <span>Slot</span></a>
     </li>
-    
+
     <li class="nav-item active">
         <a class="nav-link" href="my_appointment.jsp">
             <i class="fa-solid fa-calendar-check"></i>
             <span>My Appointment</span></a>
     </li>
 
+    <li class="nav-item active">
+        <a class="btn nav-link" href="../logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span></a>
+    </li>
+
 
 </ul>
+
+

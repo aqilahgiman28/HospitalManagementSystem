@@ -4,9 +4,57 @@
         <servlet-name>checksql</servlet-name>
         <servlet-class>dbcon.checksql</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>registerpatient</servlet-name>
+        <servlet-class>patient.registerpatient</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>checklogin</servlet-name>
+        <servlet-class>patient.checklogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>bookappointment</servlet-name>
+        <servlet-class>patient.bookappointment</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>appcancelation</servlet-name>
+        <servlet-class>patient.appcancelation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updatepatient</servlet-name>
+        <servlet-class>patient.updatepatient</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>patient.logout</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>checksql</servlet-name>
         <url-pattern>/checksql</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerpatient</servlet-name>
+        <url-pattern>/registerpatient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>checklogin</servlet-name>
+        <url-pattern>/checklogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>bookappointment</servlet-name>
+        <url-pattern>/bookappointment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>appcancelation</servlet-name>
+        <url-pattern>/appcancelation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updatepatient</servlet-name>
+        <url-pattern>/updatepatient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

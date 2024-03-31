@@ -53,29 +53,51 @@ public class dbConnect {
             // stmt=con.createStatement();
             rs = ps.executeQuery();
         } catch (ClassNotFoundException ex) {
-         // Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
+            // Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
 
         }
         return rs;
 
     }
 
-    public void executesql(String executesql) throws SQLException {
+    public int executesql(String executesql) throws SQLException {
+        int affectedRows = -1;
+
         try {
             Class.forName(driver);
             con = DriverManager.getConnection(urlcon, username, password);
             ps = con.prepareStatement(executesql);
-            //stmt=con.createStatement();
-            ps.execute();
-        } catch (ClassNotFoundException ex) {
-      //    Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
+            
+            affectedRows = ps.executeUpdate();
 
+        } catch (ClassNotFoundException ex) {
+            //    Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
         }
-        //return rs;
+        return affectedRows;
+    }
+
+    public int insertAndGetId(String executesql) throws SQLException {
+        int getId = -1;
+
+        try {
+            Class.forName(driver);
+            con = DriverManager.getConnection(urlcon, username, password);
+            ps = con.prepareStatement(executesql, Statement.RETURN_GENERATED_KEYS);
+            // Execute the INSERT statement
+            int affectedRows = ps.executeUpdate();
+            if (affectedRows > 0) {
+                ResultSet rs = ps.getGeneratedKeys();
+                if (rs.next()) {
+                    getId = rs.getInt(1); // Get the first generated key
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            //    Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return getId;
     }
 
     ResultSet sqlquery() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
-

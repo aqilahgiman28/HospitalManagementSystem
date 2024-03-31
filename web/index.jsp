@@ -1,3 +1,5 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="dbcon.dbConnect"%>
 <!DOCTYPE html>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html lang="en">
@@ -11,7 +13,7 @@
         <meta content="" name="description">
         <meta content="" name="keywords">
         <!-- Favicons -->
-        
+
         <jsp:include page="component/style-link.jsp" /> 
     </head>
 
@@ -160,8 +162,15 @@
 
                         <div class="col-12">
                             <div class="count-box">
+                                <%                                        dbConnect query1 = new dbConnect();
+                                    ResultSet rs = null;
+                                    String sql = "SELECT count(*) AS COUNTDOC FROM \"public\".\"doctor\" ";
+                                    rs = query1.sqlquery(sql);
+                                    rs.next();
+
+                                %>
                                 <i class="fas fa-user-md"></i>
-                                <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                                <span data-purecounter-start="0" data-purecounter-end="<%out.println(rs.getString("COUNTDOC"));%>" data-purecounter-duration="1" class="purecounter"></span>
                                 <p>Doctors</p>
                             </div>
                         </div>
@@ -196,14 +205,19 @@
                     </div>
 
                     <div class="row">
+                        <%
+                            ResultSet rs2 = null;
+                            String sql2 = "SELECT * FROM \"public\".\"doctor\" ";
+                            rs2 = query1.sqlquery(sql2);
 
+                            while (rs2.next()) {
+                        %>
                         <div class="col-lg-6">
                             <div class="member d-flex align-items-start">
                                 <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
                                 <div class="member-info">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Medical Officer</span>
-                                    <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                    <h4><%out.println(rs2.getString("name"));%></h4>
+                                    <span><%out.println(rs2.getString("specialization"));%></span>
                                     <div class="social">
                                         <a href=""><i class="ri-twitter-fill"></i></a>
                                         <a href=""><i class="ri-facebook-fill"></i></a>
@@ -213,57 +227,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-6 mt-4 mt-lg-0">
-                            <div class="member d-flex align-items-start">
-                                <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Anesthesiologist</span>
-                                    <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                                    <div class="social">
-                                        <a href=""><i class="ri-twitter-fill"></i></a>
-                                        <a href=""><i class="ri-facebook-fill"></i></a>
-                                        <a href=""><i class="ri-instagram-fill"></i></a>
-                                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 mt-4">
-                            <div class="member d-flex align-items-start">
-                                <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>William Anderson</h4>
-                                    <span>Cardiology</span>
-                                    <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                                    <div class="social">
-                                        <a href=""><i class="ri-twitter-fill"></i></a>
-                                        <a href=""><i class="ri-facebook-fill"></i></a>
-                                        <a href=""><i class="ri-instagram-fill"></i></a>
-                                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 mt-4">
-                            <div class="member d-flex align-items-start">
-                                <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Amanda Jepson</h4>
-                                    <span>Neurosurgeon</span>
-                                    <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                                    <div class="social">
-                                        <a href=""><i class="ri-twitter-fill"></i></a>
-                                        <a href=""><i class="ri-facebook-fill"></i></a>
-                                        <a href=""><i class="ri-instagram-fill"></i></a>
-                                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <%}%>
 
                     </div>
 
@@ -432,7 +396,7 @@
 
         <div id="preloader"></div>
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-        <jsp:include page="component/js-link.jsp" /> 
+            <jsp:include page="component/js-link.jsp" /> 
     </body>
 
 </html>

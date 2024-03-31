@@ -11,12 +11,10 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Medilab Bootstrap Template - Index</title>
+        <title>Medilab</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
-        <!-- Favicons -->
-        <link href="../assets/img/favicon.png" rel="icon">
-        <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link rel="icon" href="assets/img/hospital_icon.png" >
 
         <!-- Custom styles for this template-->
         <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
@@ -40,14 +38,14 @@
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                         </div>
-                                        <form class="user" action="checklogin">
+                                        <form class="user" action="checklogin" method="post">
                                             <div class="form-group">
-                                                <input type="email" class="form-control form-control-user"
-                                                       id="exampleInputEmail" aria-describedby="emailHelp"
+                                                <input type="email" class="form-control "
+                                                       id="exampleInputEmail" name="email" aria-describedby="emailHelp"
                                                        placeholder="Enter Email Address...">
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-control form-control-user"
+                                                <input type="password" class="form-control " name="password"
                                                        id="exampleInputPassword" placeholder="Password">
                                             </div>
                                             <div class="form-group">
@@ -57,17 +55,18 @@
                                                         Me</label>
                                                 </div>
                                             </div>
-                                            <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                            <button type="submit" class="btn btn-primary btn-user btn-block">
                                                 Login
-                                            </a>
-                                      
+                                            </button>
+
                                         </form>
                                         <hr>
+
                                         <div class="text-center">
-                                            <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                            <a class="small" href="patient/registration.jsp">Create an Account!</a>
                                         </div>
                                         <div class="text-center">
-                                            <a class="small" href="register.html">Create an Account!</a>
+                                            <a class="small" href="index.jsp">View Our Web-site</a>
                                         </div>
                                     </div>
                                 </div>
