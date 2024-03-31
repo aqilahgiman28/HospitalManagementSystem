@@ -54,10 +54,10 @@ public class loginAdmin extends HttpServlet {
                 if (r.equals("admin")) {
                     response.sendRedirect("/HospitalManagementSystem-main/admin/dashboard.jsp?status=successUpdate");
                 } else if (r.equals("doctor")) {
-                    response.sendRedirect("/HospitalManagementSystem-main/admin/index.jsp?status=successUpdate");
+                    response.sendRedirect("/HospitalManagementSystem-main/doctor/home.jsp?status=successUpdate");
                 }
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/loginAdmin.jsp?loginFailed=true");
+                response.sendRedirect("/HospitalManagementSystem-main/admin/index.jsp?loginFailed=true");
             }
 
         }
