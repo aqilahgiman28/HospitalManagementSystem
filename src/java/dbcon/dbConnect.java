@@ -32,9 +32,9 @@ public class dbConnect {
 
     public dbConnect() {
         this.driver = "org.postgresql.Driver";
-        this.urlcon = "jdbc:postgresql://localhost:5432/hospital_management_system";
+        this.urlcon = "jdbc:postgresql://localhost:5432/hmsdb";
         this.username = "postgres";
-        this.password = "123456";
+        this.password = "12345";
     }
 
     public dbConnect(String driver, String urlcon, String u, String p) {
@@ -95,6 +95,23 @@ public class dbConnect {
             //    Logger.getLogger(Users.class.getName()).log(Level.SEVERE, null, ex);
         }
         return getId;
+    }
+    
+    public ResultSet getdata(String sql) {
+        ResultSet temp = null;
+
+        try {
+            Class.forName("org.postgresql.Driver");
+            this.con = DriverManager.getConnection(urlcon, username, password);
+            this.stmt = this.con.createStatement();
+            temp = this.stmt.executeQuery(sql);
+        } catch (SQLException var4) {
+            Logger.getLogger(dbConnect.class.getName()).log(Level.SEVERE, (String) null, var4);
+        } catch (ClassNotFoundException var5) {
+            Logger.getLogger(dbConnect.class.getName()).log(Level.SEVERE, (String) null, var5);
+        }
+
+        return temp;
     }
 
     ResultSet sqlquery() {
