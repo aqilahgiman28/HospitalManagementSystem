@@ -48,8 +48,11 @@
                 </header>
                 <%
                     dbConnect connection = new dbConnect();
+                    String medicine_id = request.getParameter("id").trim();
+
                     String sql = "SELECT * FROM public.medicine "
-                                + "LIMIT 1000 OFFSET 0";
+                            + "WHERE id = '" + medicine_id + "' "
+                            + "LIMIT 1000 OFFSET 0";
 
                     ResultSet rs = connection.sqlquery(sql);
 

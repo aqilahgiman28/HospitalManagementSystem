@@ -47,12 +47,14 @@
                     </div>
                 </header>
                 <%
+                    String app_id = request.getParameter("id").trim();
                     dbConnect connection = new dbConnect();
                     String sql = "SELECT a.*, p.*, s.*, d.name AS docName "
                             + "FROM public.appointment a "
                             + "JOIN public.patient p ON a.patient_id = p.id "
                             + "JOIN public.slot s ON a.slot_id = s.id "
                             + "JOIN public.doctor d ON s.doctor_id = d.id "
+                            + "WHERE a.id = '" + app_id + "' "
                             + "LIMIT 1000 OFFSET 0;";
 
                     ResultSet rs = connection.sqlquery(sql);
@@ -81,7 +83,7 @@
                                             <span class="form-control" id="doctorName"><%= rs.getString("docName")%></span>
                                         </div>
                                         <!-- Form Row-->
-                                        
+
                                         <div class="row gx-3 mb-3">
                                             <!-- Form Group (first name)-->
                                             <div class="col-md-6">
@@ -106,7 +108,7 @@
                                         </div>
                                         <input name="id" type="hidden"  value="<% out.println(rs.getString("id"));%>" />
 
-                                            <!-- Form Row-->
+                                        <!-- Form Row-->
 
                                         <!-- Save changes button-->
                                         <div class="text-center"> 

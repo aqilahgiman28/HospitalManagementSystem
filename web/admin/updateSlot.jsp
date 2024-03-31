@@ -48,9 +48,11 @@
                 </header>
                 <%
                     dbConnect connection = new dbConnect();
+                    String slot_id = request.getParameter("id").trim();
                     String sql = "SELECT s.*, d.* "
                             + "FROM public.slot s "
                             + "JOIN public.doctor d ON s.doctor_id = d.id "
+                            + "WHERE s.id = '" + slot_id + "' "
                             + "LIMIT 1000 OFFSET 0;";
 
                     ResultSet rs = connection.sqlquery(sql);
@@ -81,13 +83,13 @@
                                             <!-- Form Group (first name)-->
                                             <div class="col-md-6">
                                                 <label class="small mb-1">Date</label>
-                                                 <input class="form-control" id="slotDate" name="date" type="date" placeholder="description" value=<% out.println(rs.getString("date"));%> />
+                                                <input class="form-control" id="slotDate" name="date" type="date" placeholder="description" value=<% out.println(rs.getString("date"));%> />
                                             </div>
                                             <!-- Form Group (last name)-->
                                             <div class="col-md-6">
                                                 <label class="small mb-1">Time</label>
 
-                                                 <input class="form-control" id="slotTime" name="time" type="time" placeholder="description" value=<% out.println(rs.getString("time"));%> />
+                                                <input class="form-control" id="slotTime" name="time" type="time" placeholder="description" value=<% out.println(rs.getString("time"));%> />
                                             </div>
 
                                         </div>

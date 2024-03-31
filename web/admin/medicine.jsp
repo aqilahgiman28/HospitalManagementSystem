@@ -68,7 +68,7 @@
                                 <h6 class="m-0 font-weight-bold text-primary">Medicine Lists</h6>
                             </div>
                             <div style="margin-bottom: 20px;"></div>
-                            <div><button class="btn btn-success" onclick="window.location.href = 'addMedicine.jsp'">Add New Medicine</button>
+                            <div><button class="btn btn-success ml-4" onclick="window.location.href = 'addMedicine.jsp'">Add New Medicine</button>
 
                                 <div class="card-body">
                                     <div class="table-responsive">

@@ -35,7 +35,7 @@
             sql2 += "WHERE \"public\".doctor.specialization = '" + specialize + "'";
         }
     }
-    sql2 += "AND  \"public\".slot.status = 'active' AND \"public\".slot.date > '"+formattedDate+"'";
+    sql2 += "AND  \"public\".slot.status = 'available' AND \"public\".slot.date > '"+formattedDate+"'";
 
     rs2 = query1.sqlquery(sql2);
     int i = 1;

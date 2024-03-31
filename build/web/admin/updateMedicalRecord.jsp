@@ -47,6 +47,7 @@
                     </div>
                 </header>
                 <%
+                    String mr_id = request.getParameter("id").trim();
                     dbConnect connection = new dbConnect();
                     String sql = "SELECT mr.*, a.*, p.*, s.*, d.name AS docName "
                             + "FROM public.medical_record mr "
@@ -54,6 +55,7 @@
                             + "JOIN public.patient p ON a.patient_id = p.id "
                             + "JOIN public.slot s ON a.slot_id = s.id "
                             + "JOIN public.doctor d ON s.doctor_id = d.id "
+                            + "WHERE mr.id = '" + mr_id + "' "
                             + "LIMIT 1000 OFFSET 0; ";
 
                     ResultSet rs = connection.sqlquery(sql);
@@ -102,7 +104,7 @@
                                             <span class="form-control" id="status"><%= rs.getString("status")%></span>
                                         </div>
                                         <div class="mb-3">
-                                            <label class="small mb-1">Description</label>
+
                                             <div class="mb-3">
                                                 <label class="small mb-1">Description</label>
                                                 <input class="form-control" id="floatingInput" name="description" type="text" value="<%= rs.getString("description")%>" />

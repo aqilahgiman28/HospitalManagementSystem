@@ -32,9 +32,9 @@ public class dbConnect {
 
     public dbConnect() {
         this.driver = "org.postgresql.Driver";
-        this.urlcon = "jdbc:postgresql://localhost:5432/hmsdb";
+        this.urlcon = "jdbc:postgresql://localhost:5432/hospital_management_system";
         this.username = "postgres";
-        this.password = "12345";
+        this.password = "123456";
     }
 
     public dbConnect(String driver, String urlcon, String u, String p) {
@@ -67,7 +67,7 @@ public class dbConnect {
             Class.forName(driver);
             con = DriverManager.getConnection(urlcon, username, password);
             ps = con.prepareStatement(executesql);
-            
+
             affectedRows = ps.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
@@ -96,7 +96,24 @@ public class dbConnect {
         }
         return getId;
     }
-    
+
+    public int deletedata(String sql) {
+        int rowsAffected = 0;
+        try {
+            Class.forName("org.postgresql.Driver");
+            this.con = DriverManager.getConnection(urlcon, username, password);
+            this.stmt = this.con.createStatement();
+            rowsAffected = this.stmt.executeUpdate(sql);
+
+        } catch (SQLException var4) {
+            Logger.getLogger(dbConnect.class.getName()).log(Level.SEVERE, (String) null, var4);
+        } catch (ClassNotFoundException var5) {
+            Logger.getLogger(dbConnect.class.getName()).log(Level.SEVERE, (String) null, var5);
+        }
+
+        return rowsAffected;
+    }
+
     public ResultSet getdata(String sql) {
         ResultSet temp = null;
 
