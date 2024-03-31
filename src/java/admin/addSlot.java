@@ -42,9 +42,9 @@ public class addSlot extends HttpServlet {
             statusInsert = slot.registerSlot(s, d, t,id);
 
             if (statusInsert) {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/slot.jsp?status=successAdd");
+                response.sendRedirect("/HospitalManagementSystem/admin/slot.jsp?status=successAdd");
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/slot.jsp?status=failedAdd");
+                response.sendRedirect("/HospitalManagementSystem/admin/slot.jsp?status=failedAdd");
             }
         }
     }

@@ -51,9 +51,9 @@ public class updateSlot extends HttpServlet {
             statusInsert = updateS.updateSlot(st, d, t, id);
 
             if (statusInsert) {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/slot.jsp?status=successUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/slot.jsp?status=successUpdate");
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/slot.jsp?status=failedUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/slot.jsp?status=failedUpdate");
             }
         }
     }

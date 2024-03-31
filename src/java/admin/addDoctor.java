@@ -46,9 +46,9 @@ public class addDoctor extends HttpServlet {
             statusInsert = doc.registerDoctor(n, r, sp, us, em, pw, pn, role);
 
             if (statusInsert) {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/doctor.jsp?status=successAdd");
+                response.sendRedirect("/HospitalManagementSystem/admin/doctor.jsp?status=successAdd");
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/doctor.jsp?status=failedAdd");
+                response.sendRedirect("/HospitalManagementSystem/admin/doctor.jsp?status=failedAdd");
             }
         }
     }

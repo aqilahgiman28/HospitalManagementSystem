@@ -23,8 +23,8 @@
         <div id="topbar" class="d-flex align-items-center fixed-top">
             <div class="container d-flex justify-content-between">
                 <div class="contact-info d-flex align-items-center">
-                    <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-                    <i class="bi bi-phone"></i> +1 5589 55488 55
+                    <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">medilab@gmail.com</a>
+                    <i class="bi bi-phone"></i> +603 80342819
                 </div>
                 <div class="d-none d-lg-flex social-links align-items-center">
                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -49,7 +49,13 @@
                         <li><a class="nav-link scrollto" href="#about">About</a></li>
                         <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
                         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                        <li><a class="nav-link scrollto" href="admin/loginAdmin.jsp">Admin</a></li>
+                        <li class="dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="admin/loginAdmin.jsp">Admin</a></li>
+                                <li><a href="admin/loginDoctor.jsp">Doctor</a></li>
+                                <li><a href="login.jsp">Patient</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
@@ -77,8 +83,9 @@
                             <div class="content">
                                 <h3>Why Choose Medilab?</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                                    Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+
+                                    Choosing Medilab Hospital offers a combination of cutting-edge medical technology, experienced healthcare professionals, and a patient-centered approach. 
+                                    With state-of-the-art facilities, Medilab ensures accurate diagnoses and effective treatments for various medical conditions. Moreover, their commitment to compassionate care fosters a supportive environment where patients feel valued and empowered throughout their healthcare journey.
                                 </p>
                                 <div class="text-center">
                                     <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>

@@ -40,9 +40,9 @@ public class updateMedicalRecord extends HttpServlet {
             statusInsert = medRec.updateMedicalRecord(d,id);
 
             if (statusInsert) {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/medicalRecord.jsp?status=successUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/medicalRecord.jsp?status=successUpdate");
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/medicalRecord.jsp?status=failedUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/medicalRecord.jsp?status=failedUpdate");
             }
         }
     }

@@ -40,9 +40,9 @@ public class addMedicine extends HttpServlet {
             statusInsert = med.registerMedicine(n,p);
 
             if (statusInsert) {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/medicine.jsp?status=successAdd");
+                response.sendRedirect("/HospitalManagementSystem/admin/medicine.jsp?status=successAdd");
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/medicine.jsp?status=failedAdd");
+                response.sendRedirect("/HospitalManagementSystem/admin/medicine.jsp?status=failedAdd");
             }
         }
     }

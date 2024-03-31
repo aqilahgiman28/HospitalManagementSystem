@@ -46,9 +46,9 @@ public class updateAppointment extends HttpServlet {
             statusInsert = newuser.updateAppointment(s,id);
 
             if (statusInsert) {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/appointment.jsp?status=successUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/appointment.jsp?status=successUpdate");
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/appointment.jsp?status=failedUpdate");
+                response.sendRedirect("/HospitalManagementSystem/admin/appointment.jsp?status=failedUpdate");
             }
         }
     }

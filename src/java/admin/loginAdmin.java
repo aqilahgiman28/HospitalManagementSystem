@@ -52,12 +52,12 @@ public class loginAdmin extends HttpServlet {
                 String r = rs.getString("role");
                 request.getSession().setAttribute("user_id", rs.getString("id"));
                 if (r.equals("admin")) {
-                    response.sendRedirect("/HospitalManagementSystem-main/admin/dashboard.jsp?status=successUpdate");
+                    response.sendRedirect("/HospitalManagementSystem/admin/dashboard.jsp?status=successUpdate");
                 } else if (r.equals("doctor")) {
-                    response.sendRedirect("/HospitalManagementSystem-main/admin/index.jsp?status=successUpdate");
+                    response.sendRedirect("/HospitalManagementSystem/doctor/home.jsp?status=successUpdate");
                 }
             } else {
-                response.sendRedirect("/HospitalManagementSystem-main/admin/loginAdmin.jsp?loginFailed=true");
+                response.sendRedirect("/HospitalManagementSystem/index.jsp?loginFailed=true");
             }
 
         }
