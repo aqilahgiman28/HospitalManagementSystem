@@ -11,8 +11,8 @@
 <%
     dbConnect query1 = new dbConnect();
     int rowAffected =0;
-    String a= request.getParameter("id");
-    String sql = "DELETE FROM public.doctor WHERE id='"+ a +"'";
+    String a= request.getParameter("id").trim();
+    String sql = "DELETE FROM public.doctor WHERE id='"+ a +"' ";
     rowAffected = query1.deletedata(sql);
 
     if (rowAffected > 0) {

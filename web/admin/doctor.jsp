@@ -52,10 +52,10 @@
                     <!-- End of Topbar -->
                     <%
                         dbConnect connection = new dbConnect();
-                        String sql = "SELECT d.*, u.*, d.id AS doc_id, u.id AS us_id "
+                        String sql = "SELECT d.*, u.* "
                                 + "FROM public.doctor AS d "
                                 + "JOIN public.\"user\" AS u ON d.user_id = u.id "
-                                + "LIMIT 1000 OFFSET 0";
+                                + "LIMIT 1000 OFFSET 0 ";
 
                         ResultSet rs = connection.sqlquery(sql);
                         // out.println(sql);
@@ -95,16 +95,17 @@
                                                 <td><% out.println(rs.getString("specialization")); %></td>
                                                 <td><% out.println(rs.getString("rate_consultation")); %></td>
                                                 <td>
-                                                    <% String updateredirect = "updateDoctor.jsp?id=" + rs.getString("us_id");%>
+                                                    <% String updateredirect = "updateDoctor.jsp?id=" + rs.getString("id");%>
                                                     <a href="<% out.println(updateredirect);%>" class="btn btn-primary w-100">Update</a>
 
                                                 </td>
                                                 <td>
-                                                    <% String deleteredirect = "deleteDoctor.jsp?id=" + rs.getString("us_id");%>
+                                                    <% String deleteredirect = "deleteDoctor.jsp?id=" + rs.getString("id");%>
                                                     <a href="<% out.println(deleteredirect);%>" class="btn btn-danger w-100">Delete</a>
 
 
                                                 </td>
+                                                
                                             </tr>
                                             <%
                                                     } catch (Exception ex) {
