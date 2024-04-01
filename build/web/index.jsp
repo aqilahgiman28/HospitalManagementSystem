@@ -23,7 +23,7 @@
         <div id="topbar" class="d-flex align-items-center fixed-top">
             <div class="container d-flex justify-content-between">
                 <div class="contact-info d-flex align-items-center">
-                    <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">medilab@gmail.com</a>
+                    <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">customerService@medilab.com</a>
                     <i class="bi bi-phone"></i> +603 80342819
                 </div>
                 <div class="d-none d-lg-flex social-links align-items-center">
@@ -98,22 +98,22 @@
                                     <div class="col-xl-4 d-flex align-items-stretch">
                                         <div class="icon-box mt-4 mt-xl-0">
                                             <i class="bx bx-receipt"></i>
-                                            <h4>Corporis voluptates sit</h4>
-                                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                            <h4>ENT</h4>
+                                            <p>Otolaryngology, more commonly known as Ear, Nose & Throat (ENT) is the field of medicine focused on the head and neck, the ear, nose and the throat.</p>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 d-flex align-items-stretch">
                                         <div class="icon-box mt-4 mt-xl-0">
                                             <i class="bx bx-cube-alt"></i>
-                                            <h4>Ullamco laboris ladore pan</h4>
-                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                                            <h4>Cardiology</h4>
+                                            <p>equipped with Interventional and Non-interventional Cardiology services.</p>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 d-flex align-items-stretch">
                                         <div class="icon-box mt-4 mt-xl-0">
                                             <i class="bx bx-images"></i>
-                                            <h4>Labore consequatur</h4>
-                                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                            <h4>Gastroenterology </h4>
+                                            <p>The study of Gastroenterology is a branch of medicine that focuses on the diagnosis, treatment and prevention of diseases and disorders related to the human digestive system.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -134,25 +134,19 @@
                         </div>
 
                         <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-                            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+                            <h3>Medilab</h3>
+                            <p>Launched in 2024, Medilab – Puchong</p>
 
                             <div class="icon-box">
                                 <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                                <h4 class="title"><a href="">Details</a></h4>
+                                <p class="description">Located at Lebuh Puteri, Bandar Puteri in Puchong, we are open from Mondays through Fridays from 8 am to 5 pm and from 8 am to 12 pm on Saturdays. Visiting hours at our inpatient wards are from 9 am to 9.30 pm.</p>
                             </div>
 
                             <div class="icon-box">
                                 <div class="icon"><i class="bx bx-gift"></i></div>
-                                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                            </div>
-
-                            <div class="icon-box">
-                                <div class="icon"><i class="bx bx-atom"></i></div>
-                                <h4 class="title"><a href="">Dine Pad</a></h4>
-                                <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                                <h4 class="title"><a href="">Services</a></h4>
+                                <p class="description">Our facilities are comprehensive so you can rest assured that we have all that you need for your treatments and procedures. Modern equipment ensures that we are up to date with medical technology and updates. To find out what we have to offer, please see the list below.</p>
                             </div>
 
                         </div>
@@ -194,7 +188,9 @@
 
                     <div class="section-title">
                         <h2>Make an Appointment</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p> 
+                            At Medilab, we are determined to provide our patients with excellence in healthcare services.
+                            Book an appointment with us.</p>
                     </div>
 
                     <button type="submit" class="btn rounded-pill text-light fw-semibold" style="background-color:#2c4964">Make an Appointment</button>
@@ -208,7 +204,7 @@
 
                     <div class="section-title">
                         <h2>Top Doctors</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>Come and meet with our professional and experience doctors!</p>
                     </div>
 
                     <div class="row">
@@ -248,7 +244,6 @@
 
                     <div class="section-title">
                         <h2>Gallery</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                     </div>
                 </div>
 
@@ -330,12 +325,11 @@
 
                     <div class="section-title">
                         <h2>Contact</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                     </div>
                 </div>
 
                 <div>
-                    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+                    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.262829630313!2d101.61961577310035!3d3.0239366539134873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb4a5f0a39495%3A0x10ab6467ddb6cb03!2sColumbia%20Asia%20Hospital%20-%20Puchong!5e0!3m2!1sen!2smy!4v1711977850799!5m2!1sen!2smy" frameborder="0" allowfullscreen></iframe>
                 </div>
 
                 <div class="container">
@@ -346,26 +340,26 @@
                                 <div class="address">
                                     <i class="bi bi-geo-alt"></i>
                                     <h4>Location:</h4>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                    <p>Lebuh Puteri, Bandar Puteri, 47100 Puchong, Selangor</p>
                                 </div>
 
                                 <div class="email">
                                     <i class="bi bi-envelope"></i>
                                     <h4>Email:</h4>
-                                    <p>info@example.com</p>
+                                    <p>customerService@medilab.com</p>
                                 </div>
 
                                 <div class="phone">
                                     <i class="bi bi-phone"></i>
                                     <h4>Call:</h4>
-                                    <p>+1 5589 55488 55s</p>
+                                    <p>+603 80342819</p>
                                 </div>
 
                             </div>
 
                         </div>
 
-                        <div class="col-lg-8 mt-5 mt-lg-0">
+<!--                        <div class="col-lg-8 mt-5 mt-lg-0">
 
                             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                                 <div class="row">
@@ -390,7 +384,7 @@
                                 <div class="text-center"><button type="submit">Send Message</button></div>
                             </form>
 
-                        </div>
+                        </div>-->
 
                     </div>
 
