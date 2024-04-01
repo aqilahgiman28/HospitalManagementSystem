@@ -1,7 +1,7 @@
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="dbcon.dbConnect"%>
-<%@page import="admin.Admin"%>]
+<%@page import="admin.Admin"%>
 
 <% if (session.getAttribute("user_id") == null) {
         response.sendRedirect("/HospitalManagementSystem-main/admin/loginAdmin.jsp");

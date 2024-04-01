@@ -46,12 +46,13 @@
                     </div>
                 </header>
                 <%
+           String user_id = request.getParameter("id").trim();
                     dbConnect connection = new dbConnect();
                     String sql = "SELECT d.*, u.*, d.id AS doc_id, u.id AS us_id "
                             + "FROM public.doctor AS d "
                             + "JOIN public.\"user\" AS u ON d.user_id = u.id "
+                            + "WHERE u.id = '" + user_id + "' "
                             + "LIMIT 1000 OFFSET 0;";
-
 
                     ResultSet rs = connection.sqlquery(sql);
 
@@ -117,7 +118,7 @@
                                                 <input class="form-control" id="floatingInput" name="rate" type="text" placeholder="description" value="<% out.println(rs.getString("rate_consultation"));%>" />
 
                                             </div>
-                                            
+
                                             <input name="id" type="hidden"  value="<% out.println(rs.getString("us_id"));%>" />
                                         </div>
                                         <!-- Save changes button-->

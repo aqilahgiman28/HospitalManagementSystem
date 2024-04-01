@@ -47,10 +47,12 @@
                 </header>
                 <!-- Main page content-->
                 <%
+                    String user_id = request.getParameter("id").trim();
                     dbConnect connection = new dbConnect();
                     String sql = "SELECT p.*, u.*, p.id AS pat_id, u.id AS us_id "
                             + "FROM public.patient AS p "
                             + "JOIN public.\"user\" AS u ON p.user_id = u.id "
+                            + "WHERE p.id = '" + user_id + "' "
                             + "LIMIT 1000 OFFSET 0;";
 
                     ResultSet rs = connection.sqlquery(sql);

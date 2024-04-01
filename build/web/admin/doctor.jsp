@@ -1,7 +1,7 @@
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="dbcon.dbConnect"%>
-<%@page import="admin.Admin"%>]
+<%@page import="admin.Admin"%>
 
 <% if (session.getAttribute("user_id") == null) {
         response.sendRedirect("/HospitalManagementSystem-main/admin/loginAdmin.jsp");
@@ -70,7 +70,7 @@
                             <div class="card-header py-3">
                                 <h6 class="m-0 font-weight-bold text-primary">Doctor Lists</h6>
                             </div><div style="margin-bottom: 20px;"></div>
-                            <div><button class="btn btn-success" onclick="window.location.href = 'addDoctor.jsp'">Add New Doctor</button>
+                            <div ><button class="btn btn-success ml-4" onclick="window.location.href = 'addDoctor.jsp'">Add New Doctor</button>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
