@@ -11,7 +11,7 @@
 <%@page import="admin.Slot"%>
 <!DOCTYPE html>
 <% if (session.getAttribute("user_id") == null) {
-        response.sendRedirect("/HospitalManagementSystem-main/admin/loginAdmin.jsp");
+        response.sendRedirect("/HospitalManagementSystem/admin/loginAdmin.jsp");
     } else {
         String id = (String) request.getSession().getAttribute("user_id");
 %>
@@ -57,7 +57,7 @@
 
                     ResultSet rs = connection.sqlquery(sql);
 
-                    if (rs.next()) {
+                    while (rs.next()) {
                 %>
                 <!-- Main page content-->
                 <div class="container-xl px-4 mt-4">
@@ -116,10 +116,7 @@
                         </div>
                     </div>
                 </div><%
-                    } else {
-                        // Handle case when no data is retrieved
-                        out.println("No appointment data found.");
-                    }
+                    } 
                 %>
 
             </main>

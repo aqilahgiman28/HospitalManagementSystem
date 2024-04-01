@@ -3,37 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/addDoctor.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updateAdmin.java</file>
             <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updateMedicalRecord.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updateAppointment.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/component/js-link.jsp</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/dashboard.jsp</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updateDoctor.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updatePrescription.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/loginAdmin.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updateSlot.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/updateMedicalRecord.jsp</file>
             <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updateMedicine.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/loginAdmin.jsp</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/addMedicine.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/addSlot.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updatePatient.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/login.jsp</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/loginDoctor.jsp</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/index.jsp</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/dbcon/dbConnect.java</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/web/patient/my_appointment.jsp</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/web/login.jsp</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/web/index.jsp</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/web/patient/home.jsp</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/web/patient/component/slot-list.jsp</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/web/patient/slot.jsp</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/web/patient/component/topbar.jsp</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/src/java/dbcon/dbConnect.java</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/web/admin/loginAdmin.jsp</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/src/java/patient/appcancelation.java</file>
-            <file>file:/C:/Users/nur_n/OneDrive/Documents/NetBeansProjects/HospitalManagementSystem/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/Prescription.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/updatePrescription.jsp</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updatePrescription.java</file>
         </group>
     </open-files>
 </project-private>

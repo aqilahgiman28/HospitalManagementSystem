@@ -32,9 +32,9 @@ public class dbConnect {
 
     public dbConnect() {
         this.driver = "org.postgresql.Driver";
-        this.urlcon = "jdbc:postgresql://localhost:5432/hospital_management_system";
+        this.urlcon = "jdbc:postgresql://localhost:5432/hmsdb";
         this.username = "postgres";
-        this.password = "123456";
+        this.password = "12345";
     }
 
     public dbConnect(String driver, String urlcon, String u, String p) {

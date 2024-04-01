@@ -3,7 +3,7 @@
 <%@page import="dbcon.dbConnect"%>
 <%@page import="admin.Prescription"%>
 <!DOCTYPE html><% if (session.getAttribute("user_id") == null) {
-        response.sendRedirect("/HospitalManagementSystem-main/admin/loginAdmin.jsp");
+        response.sendRedirect("/HospitalManagementSystem/admin/loginAdmin.jsp");
     } else {
         String id = (String) request.getSession().getAttribute("user_id");
 %>
@@ -50,11 +50,11 @@
                     <!-- End of Topbar -->
                     <%
                         dbConnect connection = new dbConnect();
-                        String sql = "SELECT pr.*,mr.*, a.*, p.*, s.*,m.*, d.name AS docName "
-                                + "FROM public.prescription pr"
-                                + "JOIN public.medicine m ON pr.medicine_id = m.id"
-                                + "JOIN public.appointment a ON pr.appointment_id = a.id"
-                                + "JOIN public.medical_record mr ON mr.appointment_id = a.id"
+                        String sql = "SELECT pr.*,mr.*, a.*, p.*, s.*,m.*, m.name AS medName,pr.id AS presID "
+                                + "FROM public.prescription pr "
+                                + "JOIN public.medicine m ON pr.medicine_id = m.id "
+                                + "JOIN public.appointment a ON pr.appointment_id = a.id "
+                                + "JOIN public.medical_record mr ON mr.appointment_id = a.id "
                                 + "JOIN public.patient p ON a.patient_id = p.id "
                                 + "JOIN public.slot s ON a.slot_id = s.id "
                                 + "JOIN public.doctor d ON s.doctor_id = d.id "
@@ -83,6 +83,7 @@
                                                 <th>Patient Name</th>
                                                 <th>Description</th>
                                                 <th>Prescription</th>
+                                                <th>Quantity</th>
                                                 <th colspan="2" style="text-align: center;">Action</th> 
                                             </tr>
                                         </thead>
@@ -97,14 +98,15 @@
                                         <tr>
                                             <td><% out.println(rs.getString("name")); %></td>
                                             <td><% out.println(rs.getString("status")); %></td>
+                                            <td><% out.println(rs.getString("medName")); %></td>
                                             <td><% out.println(rs.getString("quantity")); %></td>
                                             <td>
-                                                <% String updateredirect = "updatePrescription.jsp?id=" + rs.getString("id");%>
+                                                <% String updateredirect = "updatePrescription.jsp?id=" + rs.getString("presID");%>
                                                 <a href="<% out.println(updateredirect);%>" class="btn btn-primary w-100">Update</a>
 
                                             </td>
                                             <td>
-                                                <% String deleteredirect = "deletePrescription.jsp?id=" + rs.getString("id");%>
+                                                <% String deleteredirect = "deletePrescription.jsp?id=" + rs.getString("presID");%>
                                                 <a href="<% out.println(deleteredirect);%>" class="btn btn-danger w-100">Delete</a>
 
 

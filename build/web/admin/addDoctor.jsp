@@ -13,7 +13,7 @@
 <%@page import="admin.Doctor"%>
 <!DOCTYPE html>
 <% if (session.getAttribute("user_id") == null) {
-        response.sendRedirect("/HospitalManagementSystem-main/admin/loginAdmin.jsp");
+        response.sendRedirect("/HospitalManagementSystem/admin/loginAdmin.jsp");
     } else {
 
 %>

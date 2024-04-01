@@ -3,7 +3,7 @@
 <%@page import="dbcon.dbConnect"%>
 <%@page import="admin.MedicalRecord"%>
 <!DOCTYPE html><% if (session.getAttribute("user_id") == null) {
-        response.sendRedirect("/HospitalManagementSystem-main/admin/loginAdmin.jsp");
+        response.sendRedirect("/HospitalManagementSystem/admin/loginAdmin.jsp");
     } else {
         String id = (String) request.getSession().getAttribute("user_id");
 %>

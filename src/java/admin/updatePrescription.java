@@ -31,16 +31,20 @@ public class updatePrescription extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet updatePrescription</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet updatePrescription at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+           
+            String quantity = request.getParameter("quantity").trim();
+            String prescriptionId = request.getParameter("id").trim();
+
+            boolean statusInsert = false;
+            Prescription presc = new Prescription();
+            // Update prescription with new medicine ID and quantity
+            statusInsert = presc.updatePrescription(quantity, prescriptionId);
+
+            if (statusInsert) {
+                response.sendRedirect("/HospitalManagementSystem/admin/prescription.jsp?status=successUpdate");
+            } else {
+                response.sendRedirect("/HospitalManagementSystem/admin/prescription.jsp?status=failedUpdate");
+            }
         }
     }
 

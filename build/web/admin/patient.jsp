@@ -2,7 +2,7 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="dbcon.dbConnect"%>
 <!DOCTYPE html><% if (session.getAttribute("user_id") == null) {
-        response.sendRedirect("/HospitalManagementSystem-main/admin/loginAdmin.jsp");
+        response.sendRedirect("/HospitalManagementSystem/admin/loginAdmin.jsp");
     } else {
         String id = (String) request.getSession().getAttribute("user_id");
 %>
