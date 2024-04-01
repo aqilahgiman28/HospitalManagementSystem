@@ -16,10 +16,10 @@
 
     if (rowAffected > 0) {
         out.println("Data Deleted");
-        response.sendRedirect("/HospitalManagementSystem-main/admin/medicine.jsp?status=deleted&rowAffected=" + rowAffected);
+        response.sendRedirect("/HospitalManagementSystem/admin/medicine.jsp?status=deleted&rowAffected=" + rowAffected);
 
     }else{
-        response.sendRedirect("/HospitalManagementSystem-main/admin/medicine.jsp?status=failed");
+        response.sendRedirect("/HospitalManagementSyste/admin/medicine.jsp?status=failed");
     }
 
 
