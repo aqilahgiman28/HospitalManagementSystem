@@ -37,12 +37,12 @@
                                                 <input class="form-control" id="inputPassword" name="password" type="password" placeholder="Enter password" />
                                             </div>
                                             <!-- Form Group (remember password checkbox)-->
-                                            <div class="mb-3">
+<!--                                            <div class="mb-3">
                                                 <div class="form-check">
                                                     <input class="form-check-input" id="rememberPasswordCheck" type="checkbox" value="" />
                                                     <label class="form-check-label" for="rememberPasswordCheck">Remember password</label>
                                                 </div>
-                                            </div>
+                                            </div>-->
                                             <!-- Form Group (login box)-->
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                

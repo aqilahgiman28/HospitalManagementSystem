@@ -52,9 +52,7 @@
                     <!-- End of Topbar -->
                     <%
                         dbConnect connection = new dbConnect();
-                        String sql = "SELECT d.*, u.* "
-                                + "FROM public.doctor AS d "
-                                + "JOIN public.\"user\" AS u ON d.user_id = u.id "
+                        String sql = "SELECT * FROM public.doctor "
                                 + "LIMIT 1000 OFFSET 0 ";
 
                         ResultSet rs = connection.sqlquery(sql);

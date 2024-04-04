@@ -28,6 +28,10 @@
         <servlet-name>logout</servlet-name>
         <servlet-class>patient.logout</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>logoutAdmin</servlet-name>
+        <servlet-class>admin.logoutAdmin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>checksql</servlet-name>
         <url-pattern>/checksql</url-pattern>
@@ -163,6 +167,10 @@
     <servlet-mapping>
         <servlet-name>loginAdmin</servlet-name>
         <url-pattern>/loginAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutAdmin</servlet-name>
+        <url-pattern>/logoutAdmin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

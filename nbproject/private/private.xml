@@ -3,12 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updateMedicalRecord.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/updateMedicalRecord.jsp</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updateMedicine.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/Prescription.java</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/updatePrescription.jsp</file>
-            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updatePrescription.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/logoutAdmin.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/updatePatient.jsp</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/dashboard.jsp</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/updateDoctor.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/component/topNavBar.jsp</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/patient/component/sidebar.jsp</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/doctor.jsp</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/admin/Doctor.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/component/sideNavBar.jsp</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/src/java/patient/logout.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/patient.jsp</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/loginAdmin.jsp</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/HospitalManagementSystem/web/admin/updateDoctor.jsp</file>
         </group>
     </open-files>
 </project-private>

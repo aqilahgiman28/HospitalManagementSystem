@@ -37,12 +37,12 @@
                                                 <input class="form-control" id="inputPassword" name="password" type="password" placeholder="Enter password" />
                                             </div>
                                             <!-- Form Group (remember password checkbox)-->
-                                            <div class="mb-3">
+<!--                                            <div class="mb-3">
                                                 <div class="form-check">
                                                     <input class="form-check-input" id="rememberPasswordCheck" type="checkbox" value="" />
                                                     <label class="form-check-label" for="rememberPasswordCheck">Remember password</label>
                                                 </div>
-                                            </div>
+                                            </div>-->
                                             <!-- Form Group (login box)-->
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 
@@ -63,7 +63,7 @@
                 <footer class="footer-admin mt-auto footer-dark">
                     <div class="container-xl px-4">
                         <div class="row">
-                            <div class="col-md-6 small">Copyright © Your Website 2021</div>
+                            <div class="col-md-6 small">Copyright © Hospital Management System 2024</div>
                             
                         </div>
                     </div>
